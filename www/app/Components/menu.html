@@ -18,8 +18,8 @@
           
 			
 			
-			<div class="item item-icon-left" ng-show="actType() == 'F'"  style="width:100%; display: inline-block; padding-top:30%;">
-                             <p style="color: #ffffff;font-size:18px;padding-left:0%;padding-right:28%;text-align:center;">  <span style=" color:white;font-size:18px;padding-left:0%;text-align:center;" data-ng-bind="patientName()"></span></p>
+			<div class="item" ng-show="actType() == 'F'"  style="width:100%; display: inline-block; padding-top:30%;">
+                             <p style="color: #ffffff;font-size:18px;padding-left:0%;padding-right:28%;text-align:center;"> <i class="icon ion-checkmark-round" style="color:#9bb943;font-weight:bold;"></i> <span style=" color:white;font-size:18px;padding-left:0%;text-align:center;" data-ng-bind="patientName()"></span></p>
                
 
 
@@ -116,12 +116,12 @@
 
                 </ion-item>
 				<ion-item class="item item-icon-left" ui-sref="app.reschedule" nav-clear menu-close ng-click="feedbak()" id="menu_list" style=" border-top-color:transparent; color:white;font-weight:400;">
-			<i class="icon ion-clipboard"></i>
+			<i class="icon ion-clock"></i>
                    Reschedule Visit
 
                 </ion-item>
 				<ion-item class="item item-icon-left"  nav-clear menu-close ng-click="help()" id="menu_list" style=" border-top-color:transparent; color:white;font-weight:400;">
-			<i class="icon ion-clock"></i>
+			<i class="icon ion-clipboard"></i>
                     Help
 
                 </ion-item>
