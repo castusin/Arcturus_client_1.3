@@ -1,0 +1,161 @@
+
+
+<ion-view view-title="My Plan of Care Calender" style=" font-size: x-large;"  class="signup_background" ng-controller="loginHelpCtr">
+    <ion-nav-bar class="bar-assertive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
+
+
+    </ion-nav-bar>
+    <!--<ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-android-menu" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>-->
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.home">
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+
+
+
+        <div style="padding:4%;">
+        </div>
+        <div id="Feedback_paddingdiv">
+            <div class="row" id="login_textdiv2">
+                <div class="col col-100" id="head_style">Arcturus my plan of care</div>
+
+            </div>
+            <div class="Profile_background">
+			<div class="list">
+   <div class="item item-avatar" style="padding-bottom:7%;border-bottom:1px solid #8EA93F;">
+      <img src="assets/img/my_play_care.png">
+      <h3 style="word-wrap: break-word;  word-break: break-all;white-space: normal;">11:00 AM social works - John.<span style="float:right; color:#556625; font-weight:bold;">Tue - 4/10</span></h3>
+	  
+	  <div style="float:left; width:100%;display:inline-block;">
+	  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#8EA93F; font-weight:bold;font-size:12px;" >
+  Re-schedule
+</button>
+</div>
+
+ 
+  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#F26323; font-weight:bold;font-size:12px;">
+  Send message
+</button>
+</div>
+
+     </div>
+   </div>
+   
+   </div>
+  <div class="list">
+   <div class="item item-avatar" style="padding-bottom:7%;border-bottom:1px solid #8EA93F;">
+      <img src="assets/img/my_play_care.png">
+      <h3 style="word-wrap: break-word;  word-break: break-all;white-space: normal;">2:00 PM CNA visit - Mary. <span style="float:right; color:#556625; font-weight:bold;">Wed - 4/12</span></h3>
+	  <div style="float:left; width:100%;display:inline-block;">
+	  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#8EA93F; font-weight:bold;font-size:12px;" >
+  Re-schedule
+</button>
+</div>
+
+ 
+  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#F26323; font-weight:bold;font-size:12px;">
+  Send message
+</button>
+</div>
+
+     </div>
+   </div>
+   
+   </div>
+   
+   
+   
+   
+    <div class="list">
+   <div class="item item-avatar" style="padding-bottom:7%;border-bottom:1px solid #8EA93F;">
+      <img src="assets/img/my_play_care.png">
+      <h3 style="word-wrap: break-word;  word-break: break-all;white-space: normal;">11:00AM Doctor visit - Alex.<span style="float:right; color:#556625; font-weight:bold;">Mon - 8/12</span></h3>
+	  <div style="float:left; width:100%;display:inline-block;">
+	  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#8EA93F; font-weight:bold;font-size:12px;" >
+  Re-schedule
+</button>
+</div>
+
+ 
+  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#F26323; font-weight:bold;font-size:12px;">
+  Send message
+</button>
+</div>
+
+     </div>
+   </div>
+   
+   </div>
+   
+    <div class="list">
+   <div class="item item-avatar" style="padding-bottom:7%;border-bottom:1px solid #8EA93F;">
+      <img src="assets/img/my_play_care.png">
+      <h3 style="word-wrap: break-word;  word-break: break-all;white-space: normal;">2:00 PM CNA visit - Mary.<span style="float:right; color:#556625; font-weight:bold;">Fri - 12/12</span></h3>
+	  <div style="float:left; width:100%;display:inline-block;">
+	  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#8EA93F; font-weight:bold;font-size:12px;" >
+  Re-schedule
+</button>
+</div>
+
+ 
+  <div style="float:left; width:50%;display:inline-block;">
+   <button class="button button-small button-clear" style="text-transform:none;color:#F26323; font-weight:bold;font-size:12px;">
+  Send message
+</button>
+</div>
+
+     </div>
+   </div>
+   
+   </div>
+           
+<div style="padding:5%;">
+</div>		   
+            
+          <div class="button-bar"  id="feedback_button_bar">
+    <button type="button" class="button button-small" id="feedback_secondbutton">Previous</button>
+		&nbsp;
+    <button type="button" class="button button-small" id="feedback_secondbutton" >Next</button>
+
+</div>      
+<div style="padding:5%;">
+</div>
+<!-- <div align="center"> -->
+<!-- <h5 style="color:#556625;font-weight:bold;">Re-schedule : show <span class="badge badge-balanced">3</span></h5> -->
+<!-- </div> -->
+<!-- <div style="padding:2%;"> </div> -->
+<!-- <div align="center"> -->
+<!-- <h5 style="color:#F26323;font-weight:bold;">Messages : show &nbsp;&nbsp;&nbsp;<span class="badge badge-assertive">4</span></h5> -->
+<!-- </div> -->
+
+<!-- <div style="padding:5%;"> -->
+<!-- </div> -->
+                 </div>
+
+                </div>
+            
+    </ion-content>
+    <div class="float-button">
+      <span class="height-fix">  
+      <button id="fab-profile" ui-sref="app.jobAdd" class="button button-fab button-fab-bottom-right fab-fixed button-assertive pane" ng-click="CallTel(16783839973)" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+          <i class="ion-ios-telephone"></i>
+          <h5 style="color:white">Call Us</h5>
+
+      </button>
+ </span>
+    </div>
+
+</ion-view>

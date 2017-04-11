@@ -1,0 +1,71 @@
+
+
+<ion-view view-title="My Message" style=" font-size: x-large;"  class="signup_background" ng-controller="loginHelpCtr">
+    <ion-nav-bar class="bar-assertive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
+
+
+    </ion-nav-bar>
+    <!--<ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-android-menu" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>-->
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.home">
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+
+
+
+        <div style="padding:4%;">
+        </div>
+        <div id="Feedback_paddingdiv">
+            <div class="row" id="login_textdiv2">
+                <div class="col col-100" id="head_style">My messages</div>
+
+            </div>
+            <div class="Profile_background">
+			<div class="list">
+  <label class="item item-input">
+    <span class="input-label" style="color:#8EA93F;">Date / Time : Sent To</span>
+    
+  </label>
+  <label class="item item-input">
+    <span class="input-label" style="color:#8EA93F;">4-10 : <span style="color:black;font-weight:bold;"> Antony</span> </span>
+    
+  </label>
+  <label class="item item-input">
+    <span class="input-label" style="color:#8EA93F;">4-12 : <span style="color:black;font-weight:bold;"> Jennifer</span> </span>
+    
+  </label>
+  <label class="item item-input">
+    <span class="input-label" style="color:#8EA93F;">4-12 : <span style="color:black;font-weight:bold;"> Reschedule Confirmed</span> </span>
+    
+  </label>
+  
+ 
+ 
+</div>
+
+
+ 
+  
+
+                 </div>
+
+                </div>
+            
+    </ion-content>
+    <div class="float-button">
+      <span class="height-fix">  
+      <button id="fab-profile" ui-sref="app.jobAdd" class="button button-fab button-fab-bottom-right fab-fixed button-assertive pane" ng-click="CallTel(16783839973)" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+          <i class="ion-ios-telephone"></i>
+          <h5 style="color:white">Call Us</h5>
+
+      </button>
+ </span>
+    </div>
+
+</ion-view>
