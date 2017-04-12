@@ -5,7 +5,7 @@
         </ion-header-bar>
         <ion-content ng-controller="helpCtr">
              
-            <a class="item" ng-repeat="patient in patientDetails" ng-click="bindCall(patient.firstName)" target="_blank" style="border-bottom:1px solid #536324;">
+            <a class="item" ng-repeat="patient in patientDetails" ng-click="bindCall(patient.firstName)" on-load-clicker target="_blank" style="border-bottom:1px solid #536324;">
                 {{patient.firstName}} 
             </a>
          
