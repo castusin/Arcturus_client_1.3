@@ -1,6 +1,6 @@
 
 
-<ion-view view-title="Send Message" style=" font-size: x-large;"  class="signup_background" ng-controller="loginHelpCtr">
+<ion-view view-title="Send Message" style=" font-size: x-large;"  class="signup_background" ng-controller="messageCtr">
     <ion-nav-bar class="bar-assertive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
 
 
@@ -10,7 +10,7 @@
         </button>
     </ion-nav-buttons>-->
     <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.home">
+        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.plan">
         </button>
     </ion-nav-buttons>
 
@@ -27,30 +27,11 @@
 
             </div>
             <div class="Profile_background">
-			<div class="list">
-  <label class="item item-input">
-    <span class="input-label" style="color:#8EA93F;">Patient name</span>
-    <input type="text"value="john maddy"readonly style="font-size:12px;">
-  </label>
-  <label class="item item-input">
-    <span class="input-label" style="color:#8EA93F;">Message to</span>
-    <input type="text" value="Jennifer" style="font-size:12px;">
-  </label>
-  
- <label class="item item-input item-stacked-label">
-	<span class="input-label" style="color:#8EA93F;">your messsage</span>
-	<div style="padding:2%;"></div>
+			
 
-	<textarea placeholder="Enter your message" rows="8" cols="10" style="border:1px solid #999;padding:3%;">
-	</textarea>
-</label>
- 
-</div>
-
-
- 
+ <div>
    <div class="padding">
-            <button  class="button button-full"   id="login_button">Send Message</button>
+            <button  class="button button-full"   id="login_button" ng-click="sendMessage()">Send Message</button>
         </div>
   
 

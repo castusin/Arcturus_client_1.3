@@ -147,7 +147,18 @@ angular.module('starter.routes', [])
                 views: {
                     'menuContent': {
                         templateUrl: 'app/Components/Home/plan.html',
-                        controller: 'loginHelpCtr'
+                        controller: 'planCtr'
+                    }
+
+                }
+            })
+
+            .state('app.MyPlan', {
+                url: '/MyPlan',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'app/Components/Home/MyPlan.html',
+                        controller: 'planCtr'
                     }
 
                 }
@@ -158,7 +169,7 @@ angular.module('starter.routes', [])
                 views: {
                     'menuContent': {
                         templateUrl: 'app/Components/Home/reschedule.html',
-                        controller: 'loginHelpCtr'
+                        controller: 'rescheduleCtr'
                     }
 
                 }
@@ -168,7 +179,7 @@ angular.module('starter.routes', [])
                 views: {
                     'menuContent': {
                         templateUrl: 'app/Components/Home/message.html',
-                        controller: 'loginHelpCtr'
+                        controller: 'messageCtr'
                     }
 
                 }
@@ -178,7 +189,7 @@ angular.module('starter.routes', [])
                 views: {
                     'menuContent': {
                         templateUrl: 'app/Components/Home/mymessages.html',
-                        controller: 'loginHelpCtr'
+                        controller: 'mymessagesCtr'
                     }
 
                 }

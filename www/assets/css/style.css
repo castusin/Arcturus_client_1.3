@@ -1704,3 +1704,13 @@ div.panel {
     top: 0;
     position: relative;
 }
+
+
+#bar-footer11{
+	background: #536324; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #536324 , #91AD40); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #536324, #91AD40); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #536324, #91AD40); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #536324 , #91AD40); /* Standard syntax */
+  color:white;
+}

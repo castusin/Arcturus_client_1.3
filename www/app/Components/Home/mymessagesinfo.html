@@ -10,7 +10,7 @@
         </button>
     </ion-nav-buttons>-->
     <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.home">
+        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.mymessages">
         </button>
     </ion-nav-buttons>
 
@@ -23,43 +23,42 @@
         </div>
         <div id="Feedback_paddingdiv">
             <div class="row" id="login_textdiv2">
-                <div class="col col-100" id="head_style"> your message info</div>
+                <div class="col col-100" id="head_style">message info</div>
 
             </div>
             <div class="Profile_background">
-			<div class="list">
-  <label class="item item-input">
-    <span class="input-label" style="color:#8EA93F;">Date / Time</span>
-   
-  </label>
-  <label class="item item-input">
-    <span class="input-label" style="color:#8EA93F;">Sent By : <span style="font-weight:bold;color:black;">John maddy</span></span>
-    
-  </label>
-   <label class="item item-input">
-    <span class="input-label" style="color:#8EA93F;">To <span style="font-weight:bold;color:black;padding-left:26%;"><span style="color:#8EA93F;">:</span> Jennifer</span></span>
-    
-  </label>
-  
- <label class="item item-input item-stacked-label">
-	<span class="input-label" style="color:#8EA93F;">your messsage</span>
-	<div style="padding:2%;"></div>
+			
+				 
+				 
+				 <div style="width:100%;display:inline-block;padding:2%;">
+				 <div style="width:50%;display:inline-block;float:left;">
+				 <h5 style="color:#8EA93F;">Message Type</h5>
+				 <h5 style="color:#8EA93F;">Appt Type</h5>
+				 <h5 style="color:#8EA93F;">Appt With</h5>
+				 <h5 style="color:#8EA93F;">Email</h5>
+				 <h5 style="color:#8EA93F;">PhoneNumber</h5>
+				 <h5 style="color:#8EA93F;">Date</h5>
+				 <h5 style="color:#8EA93F;">Appointment Time</h5>
+				 </div>
+				 <div style="width:50%;display:inline-block;float:left;">
+				 <h5>Recived</h5>
+				  <h5>{{Type}}t</h5>
+				   <h5>{{Apt_with}}</h5>
+				    <h5>{{emailId}}</h5>
+					 <h5>{{phoneNumber}}</h5>
+					  <h5>{{createDate}}</h5>
+					   <h5>{{aptStarttime}}</h5>
+				 
+				 </div>
+				 </div>
+			 <label class="item item-input item-stacked-label">
+	 <span class="input-label" style="color:#8EA93F;">your messsage</span> 
+<div style="padding:2%;"></div> 
 
-	<textarea placeholder="Enter your message" rows="8" cols="10" style="border:1px solid #999;padding:3%;">
-	</textarea>
+	 <textarea placeholder="Enter your message" ng-model="messageText" rows="8" cols="10" style="border:1px solid #999;padding:3%;padding-bottom:3%;" readonly> 
+	 </textarea> 
 </label>
- 
-</div>
-
-
- 
-   <div class="padding">
-            <button  class="button button-full"   id="login_button">Send Message</button>
-        </div>
-  
-
-                 </div>
-
+<div style="padding:2%;"></div> 
                 </div>
             
     </ion-content>

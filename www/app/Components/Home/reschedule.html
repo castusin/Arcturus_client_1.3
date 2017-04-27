@@ -1,6 +1,6 @@
 
 
-<ion-view view-title="Re-Schedule Visit" style=" font-size: x-large;"  class="signup_background" ng-controller="loginHelpCtr">
+<ion-view view-title="Re-Schedule Visit" style=" font-size: x-large;"  class="signup_background" ng-controller="rescheduleCtr">
     <ion-nav-bar class="bar-assertive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
 
 
@@ -10,7 +10,7 @@
         </button>
     </ion-nav-buttons>-->
     <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.home">
+        <button class="button button-icon button-clear ion-arrow-left-a "  ui-sref="app.plan">
         </button>
     </ion-nav-buttons>
 
@@ -57,7 +57,7 @@
     <input type="text"  style="font-size:12px;">
   </label>
    <div class="padding">
-            <button  class="button button-full"   id="login_button">Send Request</button>
+            <button  class="button button-full"   id="login_button" ng-click="RescheduleCall()">Send Request</button>
         </div>
   
 <!-- <div align="center"> -->

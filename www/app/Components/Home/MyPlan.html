@@ -1,0 +1,80 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header" id="bar-footer11">
+	<div  class="item-icon-right"style="float:right;" ng-click="modal.hide()"> 
+       <i class="icon ion-android-cancel pull-right" ng-click="modal.hide()"></i></div>
+     
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input">
+
+
+
+                <div class="input-label" style="color:#8EA93F;">{{Title}}</div>
+                <div class="input-label"style="color:black;font-weight:bold;">:&nbsp;&nbsp;{{appWith}}</div>
+            </label>
+        </div>
+        <div class="button-bar" style="box-shadow: none;padding-left:2%;padding-right:2%;">
+            <a class="button " style="border:1px solid #d5d5d5;font-size:9px;" ng-click="Schedule=true;SendMessage=false;workAreaMsg=''">Re-Schedule</a>
+            <a class="button " style="border:1px solid #d5d5d5;font-size:9px;" ng-click="SendMessage=true;Schedule=false;datetimeValue=''">SendMessage</a>
+            <a class="button " style="border:1px solid #d5d5d5;font-size:9px;" ng-click="cancelEvent();SendMessage=false;Schedule=false;workAreaMsg='';datetimeValue=''">Cancel-schedule</a>
+
+
+        </div>
+            <div ng-show="Schedule" ng-show="SendMessage">
+                <div>
+
+
+                    <span class="input-label" style="color:#8EA93F;padding-left:2%;">Date&Time</span>
+
+                    <ion-list>
+                    <!-- <div class="item" ion-datetime-picker ng-model="datetimeValue"> -->
+                        <!-- {{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}} -->
+                    <!-- </div> -->
+					<div class="list">
+					  
+
+						   <div class="item item-input-inset">
+							  <label class="item item-input-wrapper" style="border:1px solid #d5d5d5;" ion-datetime-picker ng-model="datetimeValue">
+							 <i class="icon ion-calendar"></i>
+							  <input type="text" placeholder="date & time" style="width:20%;">{{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
+							  </label>
+						   </div>
+                        </div>
+                     </ion-list>
+
+
+
+                </div>
+
+                <div class="padding">
+                    <button  class="button button-full"   id="login_button" ng-click="RescheduleCall()">Send Request</button>
+                </div>
+
+            </div>
+
+        <div  ng-show="SendMessage" ng-show="Schedule">
+            <div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="color:#8EA93F;">your messsage</span>
+                <div style="padding:2%;"></div>
+
+                <textarea placeholder="Enter your message" rows="8" cols="10" ng-model="workAreaMsg" style="border:1px solid #999;padding:3%;">
+                </textarea>
+            </label>
+            </div>
+
+            <div class="padding">
+                <button  class="button button-full"   id="login_button" ng-click="sendMessage()">Send Message</button>
+            </div>
+             
+        </div>
+
+
+
+       <!-- <button class="button button-stable button-positive" ui-sref="app.reschedule">Re-schedule</button>
+        <button class="button button-stable button-positive" ui-sref="app.message">SendMessage</button>-->
+       <!-- <button class="button button-full button-assertive" ng-click="cancelEvent()">Cancel-schedule</button>-->
+    </ion-content>
+	
+</ion-modal-view>

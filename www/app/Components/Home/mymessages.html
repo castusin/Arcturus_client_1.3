@@ -1,6 +1,6 @@
 
 
-<ion-view view-title="My Message" style=" font-size: x-large;"  class="signup_background" ng-controller="loginHelpCtr">
+<ion-view view-title="My Message" style=" font-size: x-large;"  class="signup_background" ng-controller="mymessagesCtr">
     <ion-nav-bar class="bar-assertive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
 
 
@@ -26,26 +26,29 @@
                 <div class="col col-100" id="head_style">My messages</div>
 
             </div>
+            <ion-scroll  direction="y" style="height:390px;" >
+
             <div class="Profile_background">
 			<div class="list">
-  <label class="item item-input">
-    <span class="input-label" style="color:#8EA93F;">Date / Time : Sent To</span>
+  <!-- <label class="item item-input"> -->
+    <!-- <span class="input-label" style="color:#8EA93F;">Date / Time : Sent To</span> -->
     
-  </label>
-  <label class="item item-input" ui-sref="app.mymessagesinfo" >
-    <span class="input-label" style="color:#8EA93F;" ui-sref="app.mymessagesinfo">4-10 : <span style="color:black;font-weight:bold;" ui-sref="app.mymessagesinfo"> Antony</span> </span>
+  <!-- </label> -->
+  <!-- <label class="item item-input" ui-sref="app.mymessagesinfo" ng-repeat="msgs in viewMessagesList"> -->
+    <!-- <span class="input-label" style="color:#8EA93F;" ui-sref="app.mymessagesinfo">{{msgs.phoneNumber}}:<span style="color:black;font-weight:bold;" ui-sref="app.mymessagesinfo">{{msgs.messageText}} </span> </span> -->
     
-  </label>
-  <label class="item item-input" ui-sref="app.mymessagesinfo">
-    <span class="input-label" style="color:#8EA93F;" ui-sref="app.mymessagesinfo">4-12 : <span style="color:black;font-weight:bold;" ui-sref="app.mymessagesinfo"> Jennifer</span> </span>
-    
-  </label>
-  <label class="item item-input" ui-sref="app.mymessagesinfo">
-    <span class="input-label" style="color:#8EA93F;" ui-sref="app.mymessagesinfo">4-12 : <span style="color:black;font-weight:bold;" ui-sref="app.mymessagesinfo"> Reschedule Confirmed</span> </span>
-    
-  </label>
-  
+  <!-- </label> -->
  
+                        <div style="width:100%;border:1px solid #d5d5d5;padding:2%;" ng-repeat="msgs in viewMessagesList" ng-click="onMessageSelect(msgs)">
+                        <div style="font-size:12px;" >
+
+                            <div align="left" style="color:#8EA93F;" >{{msgs.Type}}</div>
+                            <div align="left"  style="color:black;font-weight:bold;"  >{{msgs.Apt_with}}</div>
+                            <div align="left"  style="color:black;font-weight:bold;"  >{{msgs.createDate}}</div>
+                            
+                        </div>
+                    </div>
+
  
 </div>
 
@@ -54,8 +57,10 @@
   
 
                  </div>
-
+            </ion-scroll>
                 </div>
+
+
             
     </ion-content>
     <div class="float-button">

@@ -89,6 +89,7 @@ debugger;
                     $localStorage.userId = userId;
                     $localStorage.sessionId = sessionId;
                     $localStorage.accountType = accountType;
+
                     $scope.hide($ionicLoading);
                     $state.go('app.home');
 

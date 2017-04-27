@@ -209,7 +209,7 @@ angular.module('starter.loginctrl', ['ngStorage','toaster','ngAnimate'])
 
             var userId=$localStorage.userId;
             var sessionId=$localStorage.sessionId;
-		   $localStorage.serviceURL = "http://digihealthcare.castusinfo.com/";
+		   $localStorage.serviceURL = "http://digitest.castusinfo.com/";
 		 $state.go('app.splash');
             if(userId != undefined && sessionId!=undefined  )
             {

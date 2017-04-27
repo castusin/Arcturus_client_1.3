@@ -4566,7 +4566,8 @@ font-family: Tahoma,Geneva,Kalimati,sans-serif;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 10px;
+  padding: 0px;
+  font-size:9px;
   min-height: 65px; }
   .popup-buttons .button {
     -webkit-box-flex: 1;

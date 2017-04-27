@@ -1,5 +1,5 @@
-angular.module('starter.loginHelpCtr', [])
-    .controller('loginHelpCtr', function($scope, $timeout,$rootScope,signUpReqServices, $stateParams, $state,GetContent,ionicMaterialInk,$ionicSideMenuDelegate) {
+angular.module('starter.loginHelpCtr', ['ngStorage'])
+    .controller('loginHelpCtr', function($scope, $timeout,$rootScope,signUpReqServices, $stateParams,$localStorage, $state,GetContent,ionicMaterialInk,$ionicSideMenuDelegate) {
         $scope.clearFabs = function() {
             var fabs = document.getElementsByClassName('button-fab');
             if (fabs.length && fabs.length > 1) {
@@ -35,5 +35,18 @@ angular.module('starter.loginHelpCtr', [])
                 }
             }
         }
+
+
+     /* <--------------------   myMessagesInfo                 ------------------->*/
+
+        $scope.Apt_with =  $localStorage.Apt_with ;
+        $scope.Type= $localStorage.Type  ;
+        $scope.aptStarttime=  $localStorage.aptStarttime  ;
+        $scope.createDate= $localStorage.createDate  ;
+        $scope.emailId= $localStorage.emailId   ;
+        $scope.messageText= $localStorage.messageText  ;
+        $scope.phoneNumber=  $localStorage.phoneNumber  ;
+
+        /* <--------------------   myMessagesInfo                 ------------------->*/
 
     });

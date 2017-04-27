@@ -4,11 +4,13 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['pdf','ionic', 'ionic-toast','ionic.cloud', 'ngCordova','starter.loginctrl','starter.AccountExists','starter.passwordCtrl','starter.Profilecontrollers','starter.signUpOtpCtrl','starter.ProfileCtrl',
+angular.module('starter', ['pdf','ionic', 'ionic-toast','ionic.cloud','ion-datetime-picker', 'ngCordova','ui.rCalendar','starter.loginctrl','starter.AccountExists','starter.passwordCtrl','starter.Profilecontrollers','starter.signUpOtpCtrl','starter.ProfileCtrl',
         'starter.menuCtrl','starter.FeedbackCtr','starter.homeCtrl','starter.notificationCtrl','starter.loginPassword','starter.validateOtp',
-        'starter.signUpReq','starter.signUpRegistration','starter.contentCtrl','starter.contentService','starter.directives','starter.routes',
+        'starter.signUpReq','starter.signUpRegistration','starter.planCtr','starter.myPlanService','starter.contentCtrl','starter.contentService','starter.directives','starter.routes',
         'starter.GetProfile','ngStorage','starter.HelpCtrl','starter.constructionCtrl','starter.SessionService','starter.logoutService', 'starter.UpdateProfileService',
-        'starter.forgotService','starter.loginHelpCtr','starter.forgotOtpCtr','starter.updatePasswordService','starter.resetPasswordCtr','ionic-material', 'ionMdInput','toaster','ngAnimate','starter.FeedbackService'])
+        'starter.forgotService','starter.loginHelpCtr','starter.forgotOtpCtr','starter.MessageCtr','starter.SendMessageService','starter.updatePasswordService','starter.resetPasswordCtr',
+        'starter.RescheduleCtr','starter.RescheduleService','starter.CancelScheduleService','starter.mymessagesCtr','starter.ViewMessages',
+        'ionic-material', 'ionMdInput','toaster','ngAnimate','starter.FeedbackService'])
 .config(function($ionicConfigProvider) {
 	 $ionicConfigProvider.views.transition('none');
 	})
@@ -18,8 +20,8 @@ angular.module('starter', ['pdf','ionic', 'ionic-toast','ionic.cloud', 'ngCordov
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
        debugger;
-        console.log(window.device.uuid);
-        var deviceId  =  window.device.uuid;
+       /* console.log(window.device.uuid);*/
+        var deviceId  =  "9e0fb1d4745621d9";
         $localStorage.deviceId = deviceId;
 
         var isWebView = ionic.Platform.isWebView();
