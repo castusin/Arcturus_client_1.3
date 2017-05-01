@@ -15,9 +15,9 @@
             </label>
         </div>
         <div class="button-bar" style="box-shadow: none;padding-left:2%;padding-right:2%;">
-            <a class="button " style="border:1px solid #d5d5d5;font-size:9px;" ng-click="Schedule=true;SendMessage=false;workAreaMsg=''">Re-Schedule</a>
-            <a class="button " style="border:1px solid #d5d5d5;font-size:9px;" ng-click="SendMessage=true;Schedule=false;datetimeValue=''">SendMessage</a>
-            <a class="button " style="border:1px solid #d5d5d5;font-size:9px;" ng-click="cancelEvent();SendMessage=false;Schedule=false;workAreaMsg='';datetimeValue=''">Cancel-schedule</a>
+            <a class="button " style="border:1px solid #d5d5d5;font-size: 9px;text-transform:none;padding:0px !important;" ng-click="Schedule=true;SendMessage=false;workAreaMsg=''">Re-Schedule</a>
+            <a class="button " style="border:1px solid #d5d5d5;font-size: 9px;text-transform:none;padding:0px !important;" ng-click="SendMessage=true;Schedule=false;datetimeValue=''">SendMessage</a>
+            <a class="button " style="border:1px solid #d5d5d5;font-size: 9px;text-transform:none;padding:0px !important;" ng-click="cancelEvent();SendMessage=false;Schedule=false;workAreaMsg='';datetimeValue=''">Cancel-schedule</a>
 
 
         </div>
@@ -37,7 +37,7 @@
 						   <div class="item item-input-inset">
 							  <label class="item item-input-wrapper" style="border:1px solid #d5d5d5;" ion-datetime-picker ng-model="datetimeValue">
 							 <i class="icon ion-calendar"></i>
-							  <input type="text" placeholder="date & time" style="width:20%;">{{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
+							  <input type="text" placeholder="date & time" style="width:30%;">:{{datetimeValue| date: "yyyy-MM-dd H:mm:ss"}}
 							  </label>
 						   </div>
                         </div>
